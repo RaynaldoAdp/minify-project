@@ -1,0 +1,176 @@
+* {
+  	border:0;
+  	margin:0;
+  	padding:0;
+  	box-sizing: border-box;
+}
+
+
+.bmrCalculatorContainer{
+	height: 96vh;
+	width: 100%;
+	display: flex;
+	background-image:     
+		linear-gradient(
+      	to bottom,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        ),
+        url("images/bmrCalculatorContainerBackground.jpg");
+	background-size: cover;
+}
+
+
+#title{
+	position: relative;
+	text-align: center;
+	top: 20px;
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+
+.bmrCalculatorFormContainer{
+	position: relative;
+	top: 80px;
+	width: 50%;
+	height: 400px;
+	background-color: lightblue;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid grey;
+}
+
+.Gender{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+input, h3 {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.bmrCalculatorForm{
+
+	label{
+		display: block;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		}
+
+	input[type="text"]{
+		width: 50%;
+		}	
+
+	button{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;	
+		}
+}
+
+
+
+.resultInfo{
+
+	position: relative;
+	flex: 1;
+	min-height: 95vh;
+	width: 95vw;
+	padding: 1vh;
+	margin: 2.5vh auto 2.5vh auto;
+	background-color: #e6e6e6;
+
+	h4, p, h3{
+		font-family:'Great Vibes', Helvetica, sans-serif;
+	}
+}
+
+
+.nutritionInfo{
+	position: relative;
+	left: 2vw;
+	top: 2vh;
+	display: block;
+	width: 50vw;
+}
+
+.recipes{
+
+	position: relative;
+	display: inline-block;
+	height: 300px;	
+	float: left;
+
+	p{
+		word-wrap: break-word;
+		text-align: center;
+	}
+
+	img{	
+		display: block;
+		margin: auto;
+		height: 200px;
+		width: 200px;
+	}
+}
+
+.generateMore{
+	width:33%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.generateMoreButton {
+	position: relative;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+    margin: 0 auto 0 auto;
+    cursor: pointer;
+}
+
+.hidden{
+	display: none;
+}
+
+
+footer img{
+	display: block;
+	height: 3vh;
+	margin: 0.5vh auto 0.5vh auto;
+}
+
+
+@media only screen and (min-width: 640px) {
+  .bmrCalculatorForm input[type="text"]{
+  		width: 25%;
+  }
+  .resultInfo h4 {
+		font-size: 25px;
+  }
+  .resultInfo h3 {
+		font-size: 30px;
+  }
+  .resultInfo p  {
+		font-size: 17px;
+  }
+
+}
+
